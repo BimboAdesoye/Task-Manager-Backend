@@ -20,6 +20,10 @@ mongoose
     console.log(err);
   });
 
+app.get('/',(req,res)=>{
+  res.send('welcome')
+})
+
 app.use("/tasks", tasksRouter);
 
 app.listen(port, () => {
